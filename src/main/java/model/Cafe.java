@@ -18,7 +18,7 @@ public class Cafe {
 		throw new UnsupportedOperationException();
 	}
 
-	public void setMililitrosAgua(iny mililitrosAgua) {
+	public void setMililitrosAgua(int mililitrosAgua) {
 		throw new UnsupportedOperationException();
 	}
 }
