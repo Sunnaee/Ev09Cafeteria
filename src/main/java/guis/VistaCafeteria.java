@@ -13,12 +13,15 @@ public class VistaCafeteria extends JFrame {
     private JButton descontinuarCafeButton;
 
     public VistaCafeteria(Cafeteria cafeteria){
-        setTitle("Zoo");
+        setTitle("Cafetería ^^");
         setSize(650, 500);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setResizable(false);
 
         add(mainPanel);
+
+        String[] columnas = { "Nombre", "Cantidad de gramos", "Mililitros de agua", "Tamaño", "Ingredientes opcionales" };
+
     }
 }

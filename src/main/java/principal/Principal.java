@@ -2,7 +2,6 @@ package principal;
 
 import controller.CafeteriaController;
 import guis.VistaCafeteria;
-import model.Cafe;
 import model.Cafeteria;
 
 public class Principal {
