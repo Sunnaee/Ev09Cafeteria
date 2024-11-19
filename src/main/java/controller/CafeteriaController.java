@@ -22,14 +22,8 @@ public class CafeteriaController {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
-	 * 
-	 * @param cafeteria
-	 * @param nombre
-	 */
-	public static void descontinuarCafe(Cafeteria cafeteria, String nombre) {
-		// TODO - implement CafeteriaController.descontinuarCafe
-		throw new UnsupportedOperationException();
+	public static void descontinuarCafe(Cafeteria cafeteria, int index) {
+		cafeteria.descontinuarCafe(index);
 	}
 
 	/**
