@@ -1,16 +1,15 @@
 package controller;
 
+import gestordatos.GestorDatos;
 import model.*;
+
 
 public class CafeteriaController {
 
-	/**
-	 * 
-	 * @param cafeteria
-	 */
+
 	public static Cafeteria cargarDatos(Cafeteria cafeteria) {
-		// TODO - implement CafeteriaController.cargarDatos
-		throw new UnsupportedOperationException();
+		cafeteria.setCafes(GestorDatos.cargarDatosCafes("cafes.json"));
+		return cafeteria;
 	}
 
 	/**

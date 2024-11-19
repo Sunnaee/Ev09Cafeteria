@@ -22,7 +22,7 @@ public class GestorDatos {
 		}
 	}
 
-	public static void guardarDatosCafes(ArrayList<Cafe> cafes, String nombreArchivo) {
+	public static void guardarDatosCafes(List<Cafe> cafes, String nombreArchivo) {
 		try {
 			mapper.writeValue(new File(nombreArchivo), cafes);
 		} catch (Exception e) {

@@ -8,7 +8,7 @@ public class Cafeteria {
 	private String nombre;
 	private String direccion;
 	private String redSocial;
-	private ArrayList<Cafe> cafes = new ArrayList<Cafe>();
+	private List<Cafe> cafes;
 
 	public String getNombre() {
 		return this.nombre;
@@ -42,6 +42,10 @@ public class Cafeteria {
 		return this.cafes;
 	}
 
+	public void setCafes(List<Cafe> cafes) {
+		this.cafes = cafes;
+	}
+
 	public void descontinuarCafe(String nombre) {
 		for (Cafe cafe : cafes) {
 			if (cafe.getNombre().equals(nombre)) {
@@ -55,5 +59,12 @@ public class Cafeteria {
 		this.nombre = nombreNueva;
 		this.direccion = direccionNueva;
 		this.redSocial = redSocialNueva;
+	}
+
+	public Cafeteria(String nombre, String direccion, String redSocial) {
+		this.nombre = nombre;
+		this.direccion = direccion;
+		this.redSocial = redSocial;
+		this.cafes = new ArrayList<Cafe>();
 	}
 }
