@@ -42,7 +42,7 @@ public class GestorDatos {
 		try {
 			return mapper.readValue(new File(nombreArchivo), Cafeteria.class);
 		} catch (Exception e) {
-			System.err.println("Error al leer el personaje desde " + nombreArchivo + ": " + e.getMessage());
+			System.err.println("Error al leer cafeteria desde " + nombreArchivo + ": " + e.getMessage());
 			return null;
 		}
 	}
