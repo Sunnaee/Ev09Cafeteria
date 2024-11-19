@@ -26,13 +26,8 @@ public class CafeteriaController {
 		cafeteria.descontinuarCafe(index);
 	}
 
-	/**
-	 * 
-	 * @param cafeteria
-	 */
 	public static void guardarDatos(Cafeteria cafeteria) {
-		// TODO - implement CafeteriaController.guardarDatos
-		throw new UnsupportedOperationException();
+		GestorDatos.guardarDatosCafes(cafeteria.getCafes(), "cafes.json");
 	}
 
 	/**
