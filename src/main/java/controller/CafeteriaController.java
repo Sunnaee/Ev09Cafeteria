@@ -12,14 +12,9 @@ public class CafeteriaController {
 		return cafeteria;
 	}
 
-	/**
-	 * 
-	 * @param cafeteria
-	 * @param cafe
-	 */
 	public static Cafeteria agregarCafe(Cafeteria cafeteria, Cafe cafe) {
-		// TODO - implement CafeteriaController.agregarCafe
-		throw new UnsupportedOperationException();
+		cafeteria.agregarCafe(cafe);
+		return cafeteria;
 	}
 
 	public static void descontinuarCafe(Cafeteria cafeteria, int index) {
@@ -30,16 +25,11 @@ public class CafeteriaController {
 		GestorDatos.guardarDatosCafes(cafeteria.getCafes(), "cafes.json");
 	}
 
-	/**
-	 * 
-	 * @param cafeteria
-	 * @param nombreNuevo
-	 * @param direccionNueva
-	 * @param redSocialNueva
-	 */
-	public static void modficarCafeteria(Cafeteria cafeteria, String nombreNuevo, String direccionNueva, String redSocialNueva) {
-		// TODO - implement CafeteriaController.modficarCafeteria
-		throw new UnsupportedOperationException();
+	public static Cafeteria modificarCafeteria(Cafeteria cafeteria, String nombreNuevo, String direccionNueva, String redSocialNueva) {
+		cafeteria.setNombre(nombreNuevo);
+		cafeteria.setDireccion(direccionNueva);
+		cafeteria.setRedSocial(redSocialNueva);
+		return cafeteria;
 	}
 
 }
