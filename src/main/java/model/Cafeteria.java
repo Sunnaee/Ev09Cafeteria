@@ -52,6 +52,8 @@ public class Cafeteria {
 	}
 
 	public void modificarCafeteria(String nombreNueva, String direccionNueva, String redSocialNueva) {
-		throw new UnsupportedOperationException();
+		this.nombre = nombreNueva;
+		this.direccion = direccionNueva;
+		this.redSocial = redSocialNueva;
 	}
 }
