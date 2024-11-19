@@ -6,12 +6,13 @@ import model.Cafeteria;
 import java.io.File;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class GestorDatos {
 
 	private static final ObjectMapper mapper = new ObjectMapper();
 
-	public static ArrayList<Cafe> cargarDatosCafes(String nombreArchivo) {
+	public static List<Cafe> cargarDatosCafes(String nombreArchivo) {
 		try {
 			return mapper.readValue(new File(nombreArchivo),
 					mapper.getTypeFactory().constructCollectionType(ArrayList.class, Cafe.class));
