@@ -42,8 +42,13 @@ public class Cafeteria {
 		return this.cafes;
 	}
 
-	public void descontinuarCafe(Cafe cafe) {
-		this.cafes.remove(cafe);
+	public void descontinuarCafe(String nombre) {
+		for (Cafe cafe : cafes) {
+			if (cafe.getNombre().equals(nombre)) {
+				cafes.remove(cafe);
+				break;
+			}
+		}
 	}
 
 	public void modificarCafeteria(String nombreNueva, String direccionNueva, String redSocialNueva) {
