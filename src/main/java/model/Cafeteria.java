@@ -35,15 +35,15 @@ public class Cafeteria {
 	}
 
 	public void agregarCafe(Cafe cafe) {
-		throw new UnsupportedOperationException();
+		this.cafes.add(cafe);
 	}
 
 	public List<Cafe> obtenerListaCafe() {
-		throw new UnsupportedOperationException();
+		return this.cafes;
 	}
 
 	public void descontinuarCafe(Cafe cafe) {
-		throw new UnsupportedOperationException();
+		this.cafes.remove(cafe);
 	}
 
 	public void modificarCafeteria(String nombreNueva, String direccionNueva, String redSocialNueva) {
