@@ -62,4 +62,11 @@ public class Cafeteria {
 		this.redSocial = redSocial;
 		this.cafes = new ArrayList<Cafe>();
 	}
+
+	public Cafeteria(){
+		this.nombre = "Cafeteria1";
+		this.direccion = "direccion1";
+		this.redSocial = "Instagram";
+		this.cafes = new ArrayList<Cafe>();
+	}
 }
