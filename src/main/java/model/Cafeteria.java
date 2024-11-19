@@ -38,7 +38,7 @@ public class Cafeteria {
 		this.cafes.add(cafe);
 	}
 
-	public List<Cafe> obtenerListaCafe() {
+	public List<Cafe> getCafes() {
 		return this.cafes;
 	}
 
