@@ -13,16 +13,16 @@ import java.awt.event.ActionListener;
 public class VistaAgregar extends JFrame {
 
     private JPanel mainPanel2;
-    private JTextField textNombre;
-    private JTextField textGramos;
-    private JTextField textMililitros;
-    private JComboBox<String> campoTamano;
-    private JComboBox<String> campoIngredienteOpcional;
     private JLabel nombre;
+    private JTextField textNombre;
     private JLabel gramos;
+    private JTextField textGramos;
     private JLabel mililitros;
+    private JTextField textMililitros;
     private JLabel tamano;
+    private JComboBox<String> campoTamano;
     private JLabel ingredienteOpcional;
+    private JComboBox<String> campoIngredienteOpcional;
     private JButton confirmarButton;
 
     public VistaAgregar(Cafeteria cafeteria, VistaCafeteria vistaCafeteria){

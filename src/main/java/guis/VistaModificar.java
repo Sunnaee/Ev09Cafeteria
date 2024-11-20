@@ -1,7 +1,6 @@
 package guis;
 
 import controller.CafeteriaController;
-import model.Cafe;
 import model.Cafeteria;
 
 import javax.swing.*;
@@ -13,15 +12,14 @@ public class VistaModificar extends JFrame {
 
 
     private JPanel panelModificar;
-    private JTextField ingresoCafeAntiguo;
-    private JLabel nombreCafeteriaNuevo;
-    private JTextField ingresoCafeteriaNuevo;
-    private JButton confirmarCambios;
-    private JLabel ingresoDireccionNuevo;
-    private JTextField ingresoDireccion;
-    private JLabel nombreRedSocial;
+    private JLabel textNuevoNombre;
+    private JTextField ingresoNuevoNombre;
+    private JLabel textNuevaDireccion;
+    private JTextField ingresoNuevaDireccion;
+    private JLabel textNuevaRedSocial;
     private JTextField ingresoNuevaRedSocial;
     private JTable tablaCafeteria;
+    private JButton confirmarCambiosButton;
 
     public VistaModificar(Cafeteria cafeteria, VistaCafeteria vistaCafeteria){
         setSize(600, 600);
@@ -31,7 +29,7 @@ public class VistaModificar extends JFrame {
 
         add(panelModificar);
 
-        String[] columnas = {"Nombre", "Direccion", "Red Social"};
+        String[] columnas = {"Nombre", "Dirección", "Red Social"};
 
         DefaultTableModel model = new DefaultTableModel(columnas, 0) {
             @Override
@@ -41,7 +39,7 @@ public class VistaModificar extends JFrame {
         };
         tablaCafeteria.setModel(model);
         cargarDatosCafeteria(cafeteria);
-        confirmarCambios.addActionListener(new ActionListener() {
+        confirmarCambiosButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 modificarCafeteria(cafeteria);
@@ -52,8 +50,8 @@ public class VistaModificar extends JFrame {
     }
 
     public void modificarCafeteria(Cafeteria cafeteria) {
-        String nombreNuevo = ingresoCafeteriaNuevo.getText();
-        String direccion = ingresoDireccion.getText();
+        String nombreNuevo = ingresoNuevoNombre.getText();
+        String direccion = ingresoNuevaDireccion.getText();
         String redSocial = ingresoNuevaRedSocial.getText();
         CafeteriaController.modificarCafeteria(cafeteria, nombreNuevo, direccion, redSocial);
         CafeteriaController.guardarCafeteria(cafeteria);

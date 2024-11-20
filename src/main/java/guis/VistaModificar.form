@@ -10,7 +10,7 @@
     </properties>
     <border type="none"/>
     <children>
-      <component id="e3db2" class="javax.swing.JLabel" binding="nombreCafeteriaNuevo">
+      <component id="e3db2" class="javax.swing.JLabel" binding="textNuevoNombre">
         <constraints>
           <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -31,7 +31,7 @@
           </component>
         </children>
       </scrollpane>
-      <component id="4d32b" class="javax.swing.JLabel" binding="ingresoDireccionNuevo">
+      <component id="4d32b" class="javax.swing.JLabel" binding="textNuevaDireccion">
         <constraints>
           <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -39,7 +39,7 @@
           <text value="Ingrese la nueva dirección: "/>
         </properties>
       </component>
-      <component id="a55a7" class="javax.swing.JLabel" binding="nombreRedSocial">
+      <component id="a55a7" class="javax.swing.JLabel" binding="textNuevaRedSocial">
         <constraints>
           <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -47,7 +47,7 @@
           <text value="Ingrese la red social:"/>
         </properties>
       </component>
-      <component id="988ca" class="javax.swing.JTextField" binding="ingresoDireccion">
+      <component id="988ca" class="javax.swing.JTextField" binding="ingresoNuevaDireccion">
         <constraints>
           <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -55,7 +55,7 @@
         </constraints>
         <properties/>
       </component>
-      <component id="2fd" class="javax.swing.JTextField" binding="ingresoCafeteriaNuevo">
+      <component id="2fd" class="javax.swing.JTextField" binding="ingresoNuevoNombre">
         <constraints>
           <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -71,7 +71,7 @@
         </constraints>
         <properties/>
       </component>
-      <component id="ed6ac" class="javax.swing.JButton" binding="confirmarCambios">
+      <component id="ed6ac" class="javax.swing.JButton" binding="confirmarCambiosButton">
         <constraints>
           <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
