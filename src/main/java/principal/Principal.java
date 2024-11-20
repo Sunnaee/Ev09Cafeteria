@@ -9,10 +9,11 @@ import model.Tamano;
 
 public class Principal {
     public static void main(String[] args) {
-        run();
+        Principal principal = new Principal();
+        principal.run();
     }
 
-    public static void run(){
+    public void run(){
         Cafeteria cafeteria = new Cafeteria();
         cafeteria = CafeteriaController.cargarCafeteria();
 //        Cafe cafe1 = new Cafe("Cafe1",100,100, Tamano.PEQUENO, IngredienteOpcional.CHOCOLATE);
