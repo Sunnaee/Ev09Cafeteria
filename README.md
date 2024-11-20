@@ -47,6 +47,6 @@ Cada funcionalidad se debe asociar a una interfaz gráfica que implemente el cas
 
 ### Diagrama UML:
 
-![Diagrama_UML]()
+![Diagrama_UML](Ev09Cafeteria.jpg)
 
 
