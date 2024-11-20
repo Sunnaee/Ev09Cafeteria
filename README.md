@@ -40,3 +40,13 @@ Cada funcionalidad se debe asociar a una interfaz gráfica que implemente el cas
 * Funcionalidad de la ventana (Al hacer click debe realizar algo / mostrar algo).
 * Gestión de la ventana a través de un controlador o clase del modelo.
 * Gestión de datos a través del controlador o clase del modelo.
+
+### Evidencia Ejecución:
+
+![Evidencia de Ejecucion](Evidencia_Ejecucion.png)
+
+### Diagrama UML:
+
+![Diagrama_UML]()
+
+
