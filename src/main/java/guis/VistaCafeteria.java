@@ -18,7 +18,7 @@ public class VistaCafeteria extends JFrame {
 
     public VistaCafeteria(Cafeteria cafeteria){
         setTitle("Cafetería ^^");
-        setSize(650, 500);
+        setSize(850, 500);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setResizable(false);
