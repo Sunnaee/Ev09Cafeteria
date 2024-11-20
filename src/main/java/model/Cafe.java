@@ -16,6 +16,9 @@ public class Cafe {
 		this.ingredienteOpcional = ingredienteOpcional;
 	}
 
+	public Cafe(){
+	}
+
 	public String getNombre() {
 		return nombre;
 	}
@@ -38,5 +41,13 @@ public class Cafe {
 
 	public void setMililitrosAgua(int mililitrosAgua) {
 		this.mililitrosAgua = mililitrosAgua;
+	}
+
+	public Tamano getTamano(){
+		return this.tamano;
+	}
+
+	public IngredienteOpcional getIngredienteOpcional(){
+		return this.ingredienteOpcional;
 	}
 }
