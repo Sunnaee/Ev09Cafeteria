@@ -69,6 +69,7 @@ public class VistaCafeteria extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 CafeteriaController.guardarDatos(cafeteria);
+                CafeteriaController.guardarCafeteria(cafeteria);
                 JOptionPane.showMessageDialog(VistaCafeteria.this, "Datos guardados correctamente.", "Guardado exitoso", JOptionPane.INFORMATION_MESSAGE);
             }
         });

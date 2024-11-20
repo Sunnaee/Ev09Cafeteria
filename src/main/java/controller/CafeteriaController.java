@@ -32,4 +32,12 @@ public class CafeteriaController {
 		return cafeteria;
 	}
 
+	public static void guardarCafeteria (Cafeteria cafeteria) {
+		GestorDatos.guardarDatosCafeteria(cafeteria, "cafeteria.json");
+	}
+
+	public static Cafeteria cargarCafeteria () {
+		return GestorDatos.cargarDatosCafeteria("cafeteria.json");
+	}
+
 }
